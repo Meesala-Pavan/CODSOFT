@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nothing</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="#"><img class="logo" src="./img/fas.png"></a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">What's New</a></li>
+            <li><a href="#">Newsletter</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>That's What <br><span>I like</span></h2>
+                <p>A new era. Fastrack watches are known for their high-quality materials
+                     innovative designs, and excellent performance</p>
+                    <a href="#" style="background-color:orchid">View More</a>
+            </div>
+        </div>
+        <div class="imgBox">
+            <img src="./img/whitew.png" class="nothing">
+        </div>
+        <ul class="thumb">
+            <li><img src="./img/whitew.png"  onclick="imgSlider('./img/whitew.png'); changebg('#197961')"></li>
+            <li><img src="./img/blackw1.png" onclick="imgSlider('./img/blackw1.png');changebg('#197961')"></li>
+            <li><img src="./img/bluew.png" onclick="imgSlider('./img/bluew.png'); changebg('#197961')"></li>
+        </ul>
+        <ul class="social">
+            <li><a href="#"><img src="C:\Users\Admin\Downloads\codsoft-main\Landing Page\img\facebook.png"></a></li>
+            <li><a href="#"><img src="C:\Users\Admin\Downloads\codsoft-main\Landing Page\img\twitter.png"></a></li>
+            <li><a href="#"><img src="C:\Users\Admin\Downloads\codsoft-main\Landing Page\img\instagram.png"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.nothing').src=anything;
+        }
+        function changebg(color)
+        {
+            const sec=document.querySelector('.sec');
+            sec.style.background = color;
+        }
+    </script>
+</body>
+</html>
